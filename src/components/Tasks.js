@@ -23,7 +23,7 @@ export const Tasks = () => {
 
   useEffect(() => {
     document.title = `${projectName}: Feedzaist`;
-  });
+  }, [projectName]);
 
   return (
     <div className="tasks" data-testid="tasks">

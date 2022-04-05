@@ -30,16 +30,37 @@ describe('example tests for rest api - e-mail validator', () => {
         });
   });
 
-  it.skip('validate valid email', () => {
+  it('validate valid email', () => {
     let validEmail = "john.doe@company.com";
+    cy.request({ url: URL, qs: { 'email': validEmail } }).as('validEmail');
+
+    cy.get('@validEmail')
+      .then(
+        response => {
+          cy.log(JSON.stringify(response.body))
+          expect(response.status).to.eq(200);
+          expect(response.body.data.email_address).to.eq(validEmail)
+          expect(response.body.data.valid_syntax).to.eq(true)
+        });
   });
 
-  it.skip('validate invalid email', () => {
+  it('validate invalid email', () => {
     let invalidEmail = ";doe@company.com";
+    cy.request({ url: URL, qs: { 'email': invalidEmail } }).as('invalidEmail');
+
+    cy.get('@invalidEmail')
+      .then(
+        response => {
+          cy.log(JSON.stringify(response.body))
+          expect(response.status).to.eq(200);
+          expect(response.body.data.email_address).to.eq(invalidEmail)
+          expect(response.body.data.valid_syntax).to.eq(false)
+        });
   });
 
-  it.skip('validate invalid mail - refactored method', () => {
+  it('validate invalid mail - refactored method', () => {
     let email = ";doe@company.com";
     let isValid = false;
+    cy.queryApiAndValidateRequest(email, isValid);
   });
 })
