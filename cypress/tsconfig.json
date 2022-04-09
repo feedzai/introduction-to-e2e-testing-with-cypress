@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "types": ["@testing-library/cypress", "cypress", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "plugins/*": ["./plugins/*"],
+      "selectors/*": ["./selectors/*"],
+      "static/*": ["./static/*"],
+      "support/*": ["./support/*"],
+      "tests/*": ["./tests/*"]
+    }
+  },
+  "include": ["**/*.spec.ts", "**/*.spec.js", "**/*.test.ts", "**/*.test.js"]
+}

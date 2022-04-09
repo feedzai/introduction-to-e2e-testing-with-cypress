@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57f86a55-4e52-4af7-8ad7-ecd8c350bf49" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1671" y="725" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1649269202872">
+      <screen x="1080" y="457" width="1920" height="1080" />
+    </state>
+    <state x="1671" y="725" width="728" height="482" key="MultipleFileMergeDialog/3000.457.1920.1080/1080.457.1920.1080/0.484.1080.985@1080.457.1920.1080" timestamp="1649269202872" />
+  </component>
+</project>

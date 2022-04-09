@@ -1,0 +1,15 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "component": {
+    "testFiles": "**/*.spec.{js,jsx,ts,tsx}",
+    "componentFolder": "cypress/test",
+    "viewportWidth": 800,
+    "viewportHeight": 800
+  },
+  "retries": {
+    "runMode": 2
+  },
+  "video": false
+}
